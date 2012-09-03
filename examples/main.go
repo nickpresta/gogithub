@@ -7,13 +7,15 @@ import (
 )
 
 func main() {
-	username := flag.String("username", "", "GitHub Username")
-	password := flag.String("password", "", "GitHub Password")
-	githubUser := flag.String("user", "", "GitHub User")
+	username := flag.String("username", "", "GitHub username used in authenticated requests")
+	password := flag.String("password", "", "GitHub password used in authenticated requests")
+	githubUser := flag.String("user", "", "GitHub user to query")
 	flag.Parse()
 
 	if *githubUser == "" {
-		panic("You must specify a GitHub user to query.")
+		fmt.Println("You must specify a GitHub user to query.")
+		flag.PrintDefaults()
+		return
 	}
 
 	var credentials map[string]string
