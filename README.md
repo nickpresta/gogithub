@@ -44,3 +44,5 @@ See `CHANGELOG.md` for details.
 This is released under the
 [MIT license](http://www.opensource.org/licenses/mit-license.php).
 See `LICENSE.md` for details.
+
+![Powered by Gophers](http://i.imgur.com/SwkPj.png "Powered by Gophers")
